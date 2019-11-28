@@ -56,10 +56,10 @@ class Cine{
 				sala.pop();
 			}
 		}
-		void verificarScar(){
+		void verificarArthur(){
 			stack <Persona *> aux; //Creamos una pila auxiliar para no perder los datos.
 			while(!sala.empty()){
-				if((sala.top())->getNombre()=="Scar"){
+				if((sala.top())->getNombre()=="Arthur"){
 					sala.pop();
 				}
 				else{
@@ -73,7 +73,7 @@ class Cine{
 		void verificarScar(){
 			stack <Persona *> aux;
 			while(!sala.empty()){
-				if((sala.top()->getNombre()!="Scar"){
+				if((sala.top()->getNombre()!="Arthur"){
 					aux.push(sala.top());
 				}
 				sala.pop();
@@ -84,10 +84,10 @@ class Cine{
 		bool verificarEspera(){
 			return !fila.empty(); //Retornamos True si es que hay gente esperando en la fila.
 		}
-		void verificarTimon(){
+		void verificarBruce(){
 			stack <Persona *> aux; //Creamos una pila auxiliar para no perder los datos.
 			while(!sala.empty()){
-				if((sala.top())->getNombre()=="Timon"){
+				if((sala.top())->getNombre()=="Bruce"){
 					fila.push(sala.top());
 				}
 				else{
